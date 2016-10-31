@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func SelectionSort(slice *[]int){
+func SelectionSort(slice *[]int) {
 	for i := range *slice {
 		minIndex := i
 		for j := i + 1; j < len(*slice); j++ {
@@ -14,8 +14,8 @@ func SelectionSort(slice *[]int){
 	}
 }
 
-func main(){
-	slice := []int{4,2,3,5,6,1,9,8,7}
+func main() {
+	slice := []int{4, 2, 3, 5, 6, 1, 9, 8, 7}
 	SelectionSort(&slice)
 	fmt.Println(slice)
 }
